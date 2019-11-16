@@ -1,0 +1,67 @@
+//Q;C Program to Check Whether a Number is Even or Odd.
+int main()
+{
+int a;
+printf("please enter the number");
+scanf("%d",&a);
+if(a%2==0){printf("EVEN");}
+else{printf("ODD");}}
+############################################################################1
+//Q;Program to Check Vowel or consonant
+int main()
+{
+char a;
+printf("please enter the letter\n");
+scanf("%c",&a);
+if(a=='A'||a=='E'||a=='I'||a=='O'||a=='U'){printf("VOIEL");}
+ else if(a=='a'||a=='e'||a=='i'||a=='o'||a=='u'){printf("VOIEL");}
+else{printf("CONSTANT");}
+}
+###########################################################################2
+Q;C Program to Generate Multiplication Table
+int main()
+{
+int  a;
+printf("please enter the number of table \n");
+scanf("%d",&a);
+for(int i;i<=10;i++){
+    int res=a*i;
+    printf("%d * %d = %d\n",a,i,res);
+}
+}
+##############################################################################3
+factorial!!!!
+int main()
+{
+int  i=1;
+int n;
+ int factorial;
+printf("please enter the number \n");
+scanf("%d",&n);
+for(i=1; i<=n; ++i)
+        {
+            factorial *= i;              // factorial = factorial*i;
+        }
+        printf("Factorial of %d = %llu", n, factorial);
+
+}
+################################################################4
+Q:fibonaci code
+
+int main()
+{
+int result1=0;
+int result2=1;
+int result3=0;
+int n,i;
+printf("enter the number of the term\n");
+scanf("%d",&n);
+for(i=1;n>=i;++i){
+    result1=result2;
+    result2=result3;
+     result3=result2+result1;
+   printf("%d ,",result3);
+}}
+###################################################################5
+
+ 
