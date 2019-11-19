@@ -1,0 +1,17 @@
+3 not save
+#include <stdio.h>
+void main()
+{
+    int fact=1,i;
+    printf("put the input: ");
+    scanf("%d",&i);
+    while(i>=1){
+        
+      fact=fact*i;  
+      i--;
+     
+    }
+   printf("%d",fact);
+    
+}//the factorial
+###################################################""
