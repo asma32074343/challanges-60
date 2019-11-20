@@ -16,4 +16,23 @@ int main()
 printf("the GND is %d",gnd);
     return 0;
 }
+///counth the number of degit
+#include <stdio.h>
+
+int main()
+{
+    int n1,i=1,count;
+    printf("Please enter a number\n");
+    scanf("%d",&n1);
+    while(n1!=0){
+      n1=  n1/10;
+      count++;
+    }
+    
+  
+        
+    
+printf("the GND is %d",count);
+    return 0;
+}
 
