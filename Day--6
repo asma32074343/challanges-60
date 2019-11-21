@@ -59,4 +59,29 @@ printf("ENTER NUMBER\n");
 
     return 0;
 }
+///// cheak the  Armstrong number
+#include <stdio.h>
 
+int main()
+{
+  int a,res,count;
+  int result=0;
+printf("ENTER NUMBER\n");
+   scanf("%d",&a);
+   int w=a;
+  // printf("%d",a);
+   while(a!=0){
+     res=a%10;  
+     // printf("%d #########",res);
+     result +=res*res*res;
+     a=a/10;
+   }
+ // printf("%d",result);
+   if(w == result)
+        printf("is an Armstrong number.");
+    else
+        printf(" is not an Armstrong number.");
+   
+
+    return 0;
+}
