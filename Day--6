@@ -16,3 +16,21 @@ int main()
 
     return 0;
 }
+//exponential
+#include <stdio.h>
+
+int main()
+{
+   int i,a,x;
+ int  result=1;
+   printf("please enter the number then it power");
+   scanf("%d %d",&a,&x);
+  while(x!=0){
+       result=result*a;
+       x--;
+   }
+   printf("%d",result);
+
+    return 0;
+}
+
