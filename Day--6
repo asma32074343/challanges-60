@@ -33,4 +33,30 @@ int main()
 
     return 0;
 }
+//prime number !DO NOT KNOW THE PROBLEM WHERE
+#include <stdio.h>
+
+int main()
+{
+  int i,a,flag=0;
+printf("ENTER NUMBER\n");
+   scanf("%d",&a);
+   printf("%d",a);
+   for(i=2;i<=a/2;i++){
+       if(a%i==0)
+       {
+           flag=1;
+           break;
+            printf(" this flag %d",flag);
+       }
+       if(a==1){printf("it is special case");}
+       else{
+           if(flag==1){printf("PRIM");}
+           else{printf(" notPRIM");}
+       }
+   }
+   
+
+    return 0;
+}
 
