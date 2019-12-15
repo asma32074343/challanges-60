@@ -1,0 +1,177 @@
+/******************************************************************************
+ * 1)	Write a C program to compute the sum of the two given integer values. If the two values are the same,
+ * then return triple their sum.
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main()
+{
+    int a,b,c;
+    printf("Please enter 2 integer\n");
+    scanf("%d %d",&a,&b);
+      if(a==b){
+      c=a*3;
+      printf("They are equal so %d",c);}
+      else {
+        c=a+b;
+      printf("The sum is %d",c);   
+      }
+    return 0;
+}
+ 2)	Write a C program to get the absolute difference between n and 51.
+ If n is greater than 51 return triple the absolute difference.
+ 
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main()
+{
+    int n,c;
+    printf("Please enter n \n");
+    scanf("%d",&n);
+      if(n>=51){
+      c=(n-51)*3;
+      printf("the result is %d",c);}
+      else {
+        c=51-n;
+      printf("The result is %d",c);   
+      }
+    return 0;
+}
+/******************************************************************************
+ 3)	Write a C program to check two given integers, and return true if one of them is 30 or if their sum is 30.
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main()
+{
+    int a,b,c;
+    printf("Please enter 2 integer \n");
+    scanf("%d %d",&a,&b);
+    c=a+b;
+    if(a==30||b==30||c==30){
+    printf("TRUE");}
+    else {
+    printf("FALSE");
+    }
+    return 0;
+}
+/******************************************************************************
+ 4)	Write a C program to check if a given positive number is a multiple of 3 or a multiple of 7.
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main()
+{
+    int a,b,c;
+    printf("Please enter integer should be positive\n");
+    scanf("%d",&a);
+    
+    if(a>0){
+    b=a%3;
+    c=a%7;
+    if (b==0){
+     printf("It is module of 3");   
+     
+    }else if (c==0){
+       printf("It is module of ");   
+        
+    }
+    else {
+          printf("It is neither module of 3 or 7");   
+     
+    }
+        
+    }
+    else {
+    printf("IT is negative");
+    }
+    return 0;
+}
+#include <stdio.h>
+
+int main()
+{
+    int a;
+    printf("Please enter the temperature\n");
+    scanf("%d",&a);
+    
+    if(a<0){
+    
+     printf("It is less than zero");   
+     
+    }else if (a>100){
+       printf("It is more than 100 ");   
+        
+    }
+    else {
+          printf("It is between 0 and 100");   
+     
+    }
+        
+    
+    return 0;
+}
+/******************************************************************************
+6)	Write a C program to check if two given non-negative integers have the same last digit.
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main()
+{
+    int a,b;
+    int i;
+    printf("Please enter the temperature\n");
+    scanf("%d %d",&a,&b);
+    
+    if(a<0||b<0){
+    
+     printf("are negative");   
+     
+    }else {
+      for(i=0;a<10;i++)
+      {
+          a=a/10;
+      }
+      printf("the last a digit is %d",a);
+      for(i=0;b<10;i++)
+      {
+          b=b/10;
+      }
+      printf("the last a digit is %d",b);
+    }
+        
+    
+    return 0;
+}§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+/******************************************************************************
+7)	Write a C program to check if y is greater than x, and z is greater than y from three given integers x,y,z.
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main()
+{
+    int y,x,z;
+    int i;
+    printf("Please enter x,y,z\n");
+    scanf("%d %d %d",&x,&y,&z);
+    
+    if(y>x && z>y){
+    
+     printf("true");   
+     
+    }else {
+      
+      printf("false");
+      
+    }
+        
+    
+    return 0;
+}
