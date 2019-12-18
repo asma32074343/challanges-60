@@ -1,0 +1,127 @@
+////////////ARRAY
+/******************************************************************************
+Write a program in C to store elements in an array and print it
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main()
+{   int i;
+    int stor[4];
+    for( i=0;i<4;i++){
+      scanf("%d \n",&stor[i]);
+    }
+for( i=0;i<4;i++){
+      printf("%d ",stor[i]);
+    }
+    return 0;
+}
+/******************************************************************************
+Write a program in C to read n number of values in an array and display it in reverse order
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main()
+{   int i;
+    int stor[4];
+    for( i=0;i<=4;i++){
+      scanf("%d \n",&stor[i]);
+    }
+for( i=0;i<4;i++){
+      printf("%d ",stor[4-i]);
+    }
+    return 0;
+}
+/******************************************************************************
+Write a program in C to find the sum of all elements of the array.
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main()
+{   int i;
+int sum=0;
+    int arr[]={1,4,7,8,9};
+    for( i=0;i<=4;i++){
+   sum=sum+arr[i];
+    }
+    printf("The sum is %d ",sum);
+
+    return 0;
+}
+/******************************************************************************
+Write a program in C to copy the elements of one array into another array
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main()
+{   int i;
+int arrC[4];
+    int arr[]={1,4,7,8,9};
+    for( i=0;i<=4;i++){
+     arrC[i]= arr[i];
+    }
+  
+ for( i=0;i<=4;i++){
+    printf("%d  ",arrC[i]);
+    }
+    return 0;
+}
+#include <stdio.h>
+
+int main()
+{
+     int   arr1[]={1,2,1,4,5,6,7,8,9};
+     int   arr2[8];
+     int i,j;
+    int dup=0;
+for(i=0;i<9;i++)
+{
+    arr2[i]= arr1[i];///copying the array
+}
+
+for(i=0;i<9;i++)
+{
+  for(j=0;j<9;j++)
+    {
+        if( arr1[i]== arr2[j])
+        {
+            dup=dup+1;
+        }
+    }
+}
+printf("%d",dup);
+    return 0;
+    //////////////Write a program in C to count a total number of duplicate elements in an array
+}
+*  Write a program in C to merge two arrays of same size sorted in decending order
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main()
+{
+     int  arr1[]={1,2,1,4,5};
+     int  arr2[]={11,12,3,7,8};
+     int arr3[8];
+     int i;
+    int dup=0;
+for(i=0;i<9;i++)
+{
+    arr3[i]= arr1[i]+arr2[i];
+}
+    for(i=0;i<9;i++)
+{
+    printf("%d ",arr3[i]);
+}
+
+
+    return 0;
+}§!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+§§§§§!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
