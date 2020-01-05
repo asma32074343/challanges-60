@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+int main()
+{
+    int num,chek=0,a,b;
+    printf("Please enter number");
+    scanf("%d",&num);
+
+        for(a=num;num!=0;num=num/10){
+            b=num%10;
+            chek=chek*10+b;
+        }
+       if(a==chek){
+           printf("IT IS"); 
+       } else{
+            printf("Not");
+       }
+ ///cheak if the number is plandrom or not    
+
+    return 0;
+}
+/******************************************************************************
+ * Write a program in C to find the number and sum of all integer between 100 and 200 which are divisible by
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main()
+{
+    printf("The number are: \n");
+    int i,sum=0;
+    for(i=100;i<=200;i++){
+       // printf("%d",i);
+        if(i%9==0){
+            sum=sum+i;
+             printf("%d  ",i);
+        }
+    }
+     printf("\n The sum is %d",sum);
+    
+}
