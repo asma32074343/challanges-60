@@ -37,5 +37,26 @@ int main()
         }
     }
      printf("\n The sum is %d",sum);
+     
+     *******************************
+     from decimel to binery
+     ***********************************
+     #include <stdio.h>
+
+void main() {
+    
+    int num,a,b,c,r,binery;
+    printf("please enter a number: ");
+    scanf("%d",&num);
+    while(num!=0){
+       r= num%2;
+    
+       binery=binery*10+r;
+       num=num/2;
+    }
+   
+   
+    printf("%d",binery);
+}
     
 }
