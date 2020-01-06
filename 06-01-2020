@@ -1,0 +1,62 @@
+
+#include <stdio.h>
+
+int main()
+{
+    int n,i;
+    int sum=0;
+    printf("Enter an Array size: ");
+   scanf("%d",&n);
+     int Data[n];
+     int Copy[n];
+    for(i=0;i<n;i++){
+        scanf("%d",&Data[i]);//to enter the Array 
+    }
+    
+    for(i=0;i<n;i++){
+        sum=sum+Data[i];
+       
+        printf("%d  ",Data[i]);//To desplay the Array 
+       
+    }
+    for(i=0;i<n;i++){
+       
+       Copy[i]= Data[i];
+     
+       
+    }
+    printf("\n COPY \n");
+     for(i=0;i<n;i++){
+     
+         printf("%d  ",Copy[i]);//To desplay the Array 
+    }
+    printf("\n The sum of the array is: %d ",sum);
+
+    return 0;
+}
+////////////////////
+#include <stdio.h>
+
+int main()
+{
+    int n,i,r,j;
+    int sum=0;
+    printf("Enter an Array size: ");
+    scanf("%d",&n);
+     int Data[n];
+      for(i=0;i<n;i++){
+        scanf("%d",&Data[i]);}//to enter the Array  
+      for(i=0;i<n;i++){
+       printf("%d  ",Data[i]);}//To desplay the Array 
+    //////////////////
+    for(i=0;i<n;i++){
+         for(j=0;j<i;j++){
+        if(Data[i]==Data[j]){
+            r=Data[i];
+             printf("\n the deplicate number is %d",r);     
+        }
+     }
+         // printf("\n the deplicate number is %d",r);
+    }
+      
+}
