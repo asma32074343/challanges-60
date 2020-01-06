@@ -60,3 +60,51 @@ int main()
     }
       
 }
+///////////the sum of array 
+#include <stdio.h>
+
+int main()
+{
+    int i,j,n;
+    int arr1[50][50],arr2[50][50],result[50][50];
+    printf("the size of the materixs: ");//enter the size
+    scanf("%d",&n);
+    
+    printf("Input elements in the first matrix :\n");
+       for(i=0;i<n;i++)
+        {
+            for(j=0;j<n;j++)                           //the first Array 
+            {
+	           printf("element - [%d],[%d] : ",i,j);
+	           scanf("%d",&arr1[i][j]);
+            }
+        }   
+        //////////////////////////////////////
+        printf("Input elements in the Second matrix :\n");
+       for(i=0;i<n;i++)
+        {
+            for(j=0;j<n;j++)                           //the Second Array 
+            {
+	           printf("element - [%d],[%d] : ",i,j);
+	           scanf("%d",&arr2[i][j]);
+            }
+        } 
+        ////////////////////////////////////////
+       
+       for(i=0;i<n;i++)
+        {
+            for(j=0;j<n;j++)                           //the Second Array 
+            {
+	           result[i][j]=arr1[i][j]+arr2[i][j];
+            }
+        }   
+        ////////////////////
+           printf("The result is :\n");
+       for(i=0;i<n;i++){
+       printf("\n");
+       for(j=0;j<n;j++){
+            printf("%d\t",result[i][j]);   //the show of the result 
+   }
+   printf("\n\n");}
+
+}
